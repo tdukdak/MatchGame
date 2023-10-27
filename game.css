@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Mono:wght@400;500;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+body {
+  background-color: rgb(252, 222, 103);
+  font-family: 'Fira Mono', monospace;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 100px;
+  margin: 2rem;
+}
+
+.card, img {
+  background-color: black;
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
+.gameInfo {
+  font-size: 30px;
+  margin: 3rem;
+}
+
+.students {
+  height: 200px;
+  width: 150px;
+}
