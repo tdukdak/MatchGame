@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Mono:wght@400;500;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Fira Mono', serif;
+}
+
+body {
+  background-color: rgb(34, 148, 242);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 100px;
+  margin: 2rem;
+}
+
+h4 {
+  font-size: 35px;
+  margin: 2rem;
+}
+
+p {
+  font-size: 25px;
+  font-weight: 200;
+  background-color: rgb(255, 228, 179);
+  margin: 1rem 25% 1rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 5px #000000;
+}
+
+button {
+  font-family: 'Martian Mono', serif;
+  font-size: 24px;
+  background-color: rgb(34, 148, 242);
+  margin: 3rem;
+  padding: 0.75rem;
+  border-color: black;
+  border-radius: 10px;
+  transition: scale 0.1s;
+}
+
+button:hover {
+  background-color: rgb(40, 140, 222);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 90px;
+  }
+
+  h4 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}

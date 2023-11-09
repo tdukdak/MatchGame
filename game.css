@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fira+Mono:wght@400;500;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+}
+
+body {
+  background-color: rgb(34, 148, 242);
+  user-select: none;
+}
+
+h1 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 90px;
+  margin: 1rem;
+  text-align: center;
+}
+
+button {
+  font-size: 36px;
+  font-weight: 500;
+  background-color: rgb(34, 148, 242);
+  padding: 0.75rem;
+  height: 90px;
+  width: 48%;
+  border-color: black;
+  border-radius: 10px;
+  transition: scale 0.1s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gameInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 2rem;
+}
+
+.gameCards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  background-color: rgb(0, 191, 240);
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  border-radius: 20px;
+  perspective: 1000px;
+}
+
+.card {
+  display: flex;
+  background-color: rgb(255, 228, 179);
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  width: 150px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 0px 1px 5px #000000;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  backface-visibility: hidden;
+  transition: scale 0.1s;
+}
+
+.front {
+  width: 75px;
+  height: 75px;
+  transform: rotateY(180deg);
+}
+
+button:hover {
+  background-color: rgb(40, 140, 222);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .card {
+    height: 30px;
+    width: 15px;
+  }
+
+  .movesContainer {
+    font-size: 15px;
+  }
+
+  .reset {
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+    width: 100px;
+  }
+}
